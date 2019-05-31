@@ -47,28 +47,21 @@ def move(board, position, token = "X")
 end
 
 
-def turn 
+def turn(board)
+  puts "Welcome to Tic Tac Toe!"
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  display_board(board)
+  
   puts "Where would you like to go?"
   puts "Please enter 1-9:"
   
+  input = gets.strip
+  index = input_to_index(input)
+  
+  if ( valid_move?(board, index) )
+    move(board, index, token = "X")
+    display_board(board)
+  end
+  
 end  
 
-
-puts "Welcome to Tic Tac Toe!"
-
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
-display_board(board)
-
-puts "Where would you like to go?"
-
-puts "Please enter 1-9:"
-
-input = gets.strip
-
-index = input_to_index(input)
-
-if ( valid_move?(board, index) )
-  move(board, index, token = "X")
-  display_board(board)
-end
