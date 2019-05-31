@@ -42,3 +42,21 @@ def move(board, position, token = "X")
   board[index] = token
   return board
 end
+
+
+puts "Welcome to Tic Tac Toe!"
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+display_board(board)
+
+puts "Where would you like to go? Choose a position 1 - 9"
+
+input = gets.strip
+
+index = input_to_index(input)
+
+if ( valid_move?(board, index) )
+  move(board, index, token = "X")
+  display_board(board)
+end
