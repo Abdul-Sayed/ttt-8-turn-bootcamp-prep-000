@@ -47,6 +47,11 @@ def move(board, position, token = "X")
 end
 
 
+def turn 
+  
+end  
+
+
 puts "Welcome to Tic Tac Toe!"
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
