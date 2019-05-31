@@ -46,7 +46,6 @@ end
 
 def turn(board)
   puts "Welcome to Tic Tac Toe!"
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   display_board(board)
   
   puts "Where would you like to go?"
