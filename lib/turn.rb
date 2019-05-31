@@ -48,6 +48,8 @@ end
 
 
 def turn 
+  puts "Where would you like to go?"
+  puts "Please enter 1-9:"
   
 end  
 
