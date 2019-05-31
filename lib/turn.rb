@@ -52,7 +52,7 @@ display_board(board)
 
 puts "Where would you like to go?"
 
-puts 
+puts "Please enter 1-9:"
 
 input = gets.strip
 
