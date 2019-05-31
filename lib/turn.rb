@@ -50,7 +50,9 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 display_board(board)
 
-puts "Where would you like to go? Choose a position 1 - 9"
+puts "Where would you like to go?"
+
+puts 
 
 input = gets.strip
 
